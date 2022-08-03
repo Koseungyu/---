@@ -10,12 +10,18 @@ public class MemberServiceImpl implements MemberService{
     }
 
     @Override
-        public void join(Member member) {
+    public void join(Member member) {
             memberRepository.save(member);
         }
 
-        @Override
-        public Member findMember(Long memberId) {
+    @Override
+    public Member findMember(Long memberId) {
             return memberRepository.findById(memberId);
         }
+
+    //테스트용
+    public MemberRepository getMemberRepository(){
+        return memberRepository;
     }
+
+}
