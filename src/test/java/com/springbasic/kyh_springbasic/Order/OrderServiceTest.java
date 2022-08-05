@@ -1,10 +1,8 @@
 package com.springbasic.kyh_springbasic.Order;
 
 import com.springbasic.kyh_springbasic.AppConfig;
-import com.springbasic.kyh_springbasic.member.Grade;
-import com.springbasic.kyh_springbasic.member.Member;
-import com.springbasic.kyh_springbasic.member.MemberService;
-import com.springbasic.kyh_springbasic.member.MemberServiceImpl;
+import com.springbasic.kyh_springbasic.discount.FixDiscountPolicy;
+import com.springbasic.kyh_springbasic.member.*;
 import com.springbasic.kyh_springbasic.order.Order;
 import com.springbasic.kyh_springbasic.order.OrderService;
 import com.springbasic.kyh_springbasic.order.OrderServiceImpl;

@@ -1,7 +1,11 @@
 package com.springbasic.kyh_springbasic;
 
+import com.springbasic.kyh_springbasic.discount.DiscountPolicy;
 import com.springbasic.kyh_springbasic.member.MemberRepository;
 import com.springbasic.kyh_springbasic.member.MemoryMemberRepository;
+import com.springbasic.kyh_springbasic.order.OrderService;
+import com.springbasic.kyh_springbasic.order.OrderServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
