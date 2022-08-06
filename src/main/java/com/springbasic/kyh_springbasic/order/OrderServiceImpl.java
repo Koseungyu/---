@@ -22,7 +22,7 @@ public class OrderServiceImpl implements OrderService{
 //    public void setMemberRepository(MemberRepository memberRepository) {
 //        this.memberRepository = memberRepository;
 //    }
-//
+
 //    @Autowired
 //    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
 //        this.discountPolicy = discountPolicy;
