@@ -1,12 +1,16 @@
 package com.springbasic.kyh_springbasic.order;
 
+import com.springbasic.kyh_springbasic.annotation.MainDiscountPolicy;
 import com.springbasic.kyh_springbasic.discount.DiscountPolicy;
 import com.springbasic.kyh_springbasic.member.Member;
 import com.springbasic.kyh_springbasic.member.MemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
+//@RequiredArgsConstructor                                    //final이 붙은 필수값을 생성자로 만들어준다.
 public class OrderServiceImpl implements OrderService{
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
@@ -29,7 +33,7 @@ public class OrderServiceImpl implements OrderService{
 //    }
 
     @Autowired            //의존관계 자동 주입을 위해 @Autowired 사용.
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+    public OrderServiceImpl(MemberRepository memberRepository, @MainDiscountPolicy DiscountPolicy discountPolicy) {
         this.memberRepository = memberRepository;
         this.discountPolicy = discountPolicy;
     }

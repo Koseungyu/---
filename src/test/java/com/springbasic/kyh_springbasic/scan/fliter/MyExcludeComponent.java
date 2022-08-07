@@ -1,4 +1,4 @@
-package com.springbasic.kyh_springbasic.fliter;
+package com.springbasic.kyh_springbasic.scan.fliter;
 
 import java.lang.annotation.*;
 @Target(ElementType.TYPE)
